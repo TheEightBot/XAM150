@@ -24,7 +24,7 @@
 <hr>
 <h2>Explore the REST service</h2>
 <p>This exercise uses an existing REST service. This part covers the capabilities of the service; there is no code to write here.</p>
-<p>The <strong>Book service</strong> is located at http://xam150.azurewebsites.net/api/books. This URL alone will return an HTTP 401 error. Here are the valid operations you can perform with this API using an HTTP request tool:</p>
+<p>The <strong>Book service</strong> is located at https://xamarintraining.azurewebsites.net/api/books. This URL alone will return an HTTP 401 error. Here are the valid operations you can perform with this API using an HTTP request tool:</p>
 <ul>
 <li>Call <code>GET /login</code> to get a token (if you don't pass this token to the other methods, you'll get an <code>Unauthorized</code> status returned). This will create a unique session for your application and will populate the session with a few default books.</li>
 <li>All other calls need to add the string-based token (with no quotes) as the <code>Authorization</code> header. This is what identifies you to the service. In addition, you should set the <code>Accept</code> header to <code>application/json</code>.</li>
@@ -49,7 +49,7 @@
 
 <hr>
 <h2>Open the starter solution</h2>
-<p>This exercise utilizes a provided solution. Open the <strong>Exercise 2 &gt; Start</strong> solution from your copy of the cloned or downloaded <a href="https://github.com/XamarinUniversity/XAM150/">course materials</a> in either <strong>Visual Studio for Windows</strong> or <strong>Visual Studio for Mac</strong>.</p>
+<p>This exercise utilizes a provided solution. Open the <strong>Exercise 2 &gt; Start</strong> solution from your copy of the cloned or downloaded <a href="https://github.com/TheEightBot/XAM150/">course materials</a> in either <strong>Visual Studio for Windows</strong> or <strong>Visual Studio for Mac</strong>.</p>
 <p>Examine the project structure. It has several projects in the solution.</p>
 <p>The <strong>BookClient</strong> project is the PCL which contains all the code to create and process the UI for the application. You will do all of your work in this project. There are two <code>Page</code> classes in the project, one for the main view which shows a <code>ListView</code> for the books, and a second to add or edit a specific book. </p>
 <p>The remaining projects are platform-specific. You will not need to modify any code in these projects; however, you will need to add packages to them and select one as your Startup Project for testing.</p>
@@ -141,7 +141,7 @@ If your project builds correctly then you are done with this part. If not, you c
 <li>In the <strong>Data</strong> folder, open <strong>BookManager.cs</strong>.</li>
 <li>Add the following field to your code. This is the base address of the service.</li>
 </ol>
-<pre class="prettyprint"><code>const string Url = &quot;http://xam150.azurewebsites.net/api/books/&quot;;
+<pre class="prettyprint"><code>const string Url = &quot;https://xamarintraining.azurewebsites.net/api/books/&quot;;
 </code></pre>
 
 <ol start="3">
@@ -321,7 +321,7 @@ You can use the same code to create the message body that you did when adding a 
 <hr>
 <h2>Exercise summary</h2>
 <p>You have successfully utilized a REST service within your Xamarin application. As a fun side exercise, try adding an <code>ActivityIndicator</code> to the UI while you are loading the books. The completed solution has this code implemented through a <code>Binding</code> to the <code>Page.IsBusy</code> property if you'd like to just examine one way to accomplish this. </p>
-<p>You can view the completed solution in the <strong>Exercise 2 &gt; Completed</strong> folder of your copy of the cloned or downloaded <a href="https://github.com/XamarinUniversity/XAM150/">course materials</a>.</p>
+<p>You can view the completed solution in the <strong>Exercise 2 &gt; Completed</strong> folder of your copy of the cloned or downloaded <a href="https://github.com/TheEightBot/XAM150/">course materials</a>.</p>
 
 
         <div class="align-right">
